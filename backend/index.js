@@ -3,8 +3,8 @@ const {parse} = require('csv-parse');
 
 var arr = [];
 var total = 0;
-
-    var file = fs.createReadStream("./data/students.csv")
+try{
+    var file = fs.createReadStream("./dat/students.csv")
     .pipe(parse({ delimiter: ",", from_line: 1 }))
     .on("data", function (row) {
       function getSum(total,num) 
@@ -30,6 +30,10 @@ var total = 0;
     .on("error", err=> {
       console.log("file not found"+err);
     });
+}catch(error){
+   console.log("error handled");
+}
+    
 
   
 

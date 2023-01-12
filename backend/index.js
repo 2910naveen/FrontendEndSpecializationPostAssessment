@@ -4,7 +4,7 @@ const {parse} = require('csv-parse');
 var arr = [];
 var total = 0;
 try{
-    var file = fs.createReadStream("./dat/students.csv")
+    var file = fs.createReadStream("./data/students.csv")
     .pipe(parse({ delimiter: ",", from_line: 1 }))
     .on("data", function (row) {
       function getSum(total,num) 

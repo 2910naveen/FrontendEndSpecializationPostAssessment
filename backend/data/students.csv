@@ -1,1 +1,4 @@
-name,"naveen",age,50,grade,30,name,"praveen",age,20,grade,40,name,"sushith",age,30,grade,40
+name,age,grade
+"naveen",50,30
+"praveen",20,40
+"sushith",30,40
